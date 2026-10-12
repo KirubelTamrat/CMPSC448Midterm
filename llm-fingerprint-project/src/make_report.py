@@ -1,0 +1,197 @@
+"""Produce a course report PDF with real results once train.py finishes.
+
+Without results, --draft produces an explicitly unfinished methods draft.
+"""
+from __future__ import annotations
+import argparse
+import json
+from pathlib import Path
+
+from reportlab.lib import colors
+from reportlab.lib.enums import TA_CENTER
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.lib.units import inch
+from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
+                                TableStyle, PageBreak, Image, KeepTogether)
+
+NAVY = colors.HexColor("#15304B")
+BLUE = colors.HexColor("#326187")
+GRAY = colors.HexColor("#556572")
+
+
+def styles():
+    s=getSampleStyleSheet()
+    s.add(ParagraphStyle(name="Cover",fontName="Helvetica-Bold",fontSize=21,leading=27,textColor=NAVY,spaceAfter=15))
+    s.add(ParagraphStyle(name="SubheadMine",fontName="Helvetica",fontSize=11,leading=17,textColor=GRAY,spaceAfter=10))
+    s.add(ParagraphStyle(name="SectionMine",fontName="Helvetica-Bold",fontSize=13,leading=18,textColor=NAVY,spaceBefore=15,spaceAfter=7))
+    s.add(ParagraphStyle(name="BodyMine",fontName="Helvetica",fontSize=9.5,leading=14,spaceAfter=9))
+    s.add(ParagraphStyle(name="MiniMine",fontName="Helvetica",fontSize=8,leading=11,spaceAfter=4))
+    s.add(ParagraphStyle(name="CaptionMine",fontName="Helvetica-Oblique",fontSize=8,leading=11,textColor=GRAY,spaceAfter=12))
+    return s
+
+
+def para(story, s, text, typ="BodyMine"):
+    story.append(Paragraph(text.replace(" & ", " &amp; "),s[typ]))
+
+
+def section(story,s,text):
+    story.append(Paragraph(text,s["SectionMine"]))
+
+
+def table(story,s,heads,rows,widths=None):
+    data=[[Paragraph(str(x),s["MiniMine"]) for x in heads]]
+    data.extend([[Paragraph(str(x),s["MiniMine"]) for x in row] for row in rows])
+    t=Table(data,colWidths=widths,repeatRows=1,hAlign="LEFT")
+    t.setStyle(TableStyle([
+        ("BACKGROUND",(0,0),(-1,0),colors.HexColor("#E6EDF3")),
+        ("TEXTCOLOR",(0,0),(-1,0),NAVY),
+        ("VALIGN",(0,0),(-1,-1),"TOP"),
+        ("BOTTOMPADDING",(0,0),(-1,0),8),
+        ("TOPPADDING",(0,0),(-1,-1),5),
+        ("BOTTOMPADDING",(0,1),(-1,-1),5),
+        ("ROWBACKGROUNDS",(0,1),(-1,-1),[colors.white,colors.HexColor("#F8FAFC")]),
+        ("LINEBELOW",(0,0),(-1,0),.6,BLUE),
+        ("LINEBELOW",(0,1),(-1,-1),.25,colors.HexColor("#E2E8EE")),
+    ]))
+    story.append(t)
+    story.append(Spacer(1,11))
+
+
+def insert_chart(story,s,path,caption,width=6.5):
+    if path.exists():
+        from PIL import Image as PILImage
+        with PILImage.open(path) as im:
+            w,h=im.size
+        story.append(Image(str(path),width=inch*width,height=inch*width*h/w))
+        para(story,s,caption,"CaptionMine")
+
+
+def footer(canvas,doc):
+    canvas.saveState()
+    canvas.setStrokeColor(colors.HexColor("#DCE6EF"))
+    canvas.line(45,48,568,48)
+    canvas.setFillColor(GRAY)
+    canvas.setFont("Helvetica",8)
+    canvas.drawString(45,34,"CMPSC 448 | LLM authorship attribution")
+    canvas.drawRightString(568,34,f"Page {doc.page}")
+    canvas.restoreState()
+
+
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--results", type=Path, default=Path("results"))
+    ap.add_argument("--out", type=Path, default=Path("report/Midterm_Project_Report.pdf"))
+    ap.add_argument("--draft", action="store_true", help="Create visibly unfinished methodology/report draft without training results")
+    ap.add_argument("--author",default="Kirubel Tamrat")
+    a=ap.parse_args()
+    rpath=a.results/"experiment_results.json"
+    if not a.draft and not rpath.exists():
+        raise SystemExit(f"No verified experiment JSON at {rpath}. Run python -m src.train first or use --draft.")
+    data=None if a.draft else json.loads(rpath.read_text())
+    if data is not None and "SYNTHETIC" in data.get("metadata",{}).get("source_type",""):
+        raise SystemExit("Refusing to create a report from synthetic fixture results. Run training on genuine LLM outputs.")
+    a.out.parent.mkdir(parents=True,exist_ok=True)
+    s=styles()
+    doc=SimpleDocTemplate(str(a.out),pagesize=letter,leftMargin=.73*inch,rightMargin=.73*inch,
+                          topMargin=.65*inch,bottomMargin=.7*inch,title="Who Wrote It? Identifying LLMs from Their Responses",author=a.author)
+    st=[]
+    para(st,s,"WHO WROTE IT?","Cover")
+    para(st,s,"Identifying LLMs from Their Responses","SubheadMine")
+    para(st,s,f"CMPSC 448 Midterm Project<br/>Prepared by: {a.author} (individual project)<br/>October 11, 2026","SubheadMine")
+    if data is None:
+        para(st,s,"<b>DRAFT - NOT READY TO SUBMIT.</b> The experiment has not been run with verified model responses. Results, findings, and personal reflection are still missing.")
+    else:
+        para(st,s,"<b>Experiment status:</b> The figures and performance numbers in this report were generated by the included training pipeline. Verify the raw dataset, source permissions, and findings before submission.")
+    section(st,s,"1. Problem and motivation")
+    para(st,s,"A generated answer usually arrives without an obvious signature showing which language model produced it. I wanted to see whether ordinary text patterns can serve as a useful clue. This project treats model identification as a three-class text-classification problem: given an answer, the classifier predicts whether it came from ChatGPT, Claude, or Gemini. It also tests an important possible shortcut: a classifier might learn something about the prompts instead of the models' responses.")
+    para(st,s,"The two required research questions are: <b>RQ1</b>, whether a CNN and an LSTM can identify a source model from its response; and <b>RQ2</b>, whether including the user's original prompt changes performance. Two additional analyses look at performance on a held-out task category (RQ3) and writing/formatting differences (RQ4).")
+    section(st,s,"2. Dataset and preparation")
+    para(st,s,"The dataset used is <i>LLM Response Evaluation Benchmark</i>, published by Pranavsakunde on GitHub (link in references). According to its public README, the dataset contains 100 shared prompts spanning general knowledge (20), coding (15), mathematics (15), writing (15), reasoning (15), translation (10), and safety (10). Each prompt was sent to ChatGPT, Claude, and Gemini; the source workbook contains their responses. This is convenient for the experiment because each source model should have the same prompt distribution. The dataset was collected by the original publisher, not by the author of this report.")
+    if data is None:
+        para(st,s,"<b>TO VERIFY:</b> Download and inspect the original XLSX file, confirm the 300 records and model labels, check source reuse permissions, and run the preparation script. No accuracy numbers are claimed in this draft.")
+    else:
+        m=data["metadata"]
+        para(st,s,f"The workbook was checked for empty response cells, and after validating complete prompt triplets, the pipeline retained <b>{m['dataset_rows']} text responses</b> from <b>{m['unique_prompts']} shared prompts</b>. Counts by model are {', '.join(f'{x}: {m['family_counts'].get(x,0)}' for x in ['ChatGPT','Claude','Gemini'])}. Prompts were split into {m['train_prompts']} train, {m['validation_prompts']} validation, and {m['test_prompts']} test groups. The same prompt never appears in more than one of these sets. The test partition therefore contains 45 responses, 15 per family. The uploaded workbook is the actual data input; the original author reports that these are genuine LLM-generated responses, but independent API-generation logs were not available to verify this claim.")
+    para(st,s,"I kept the exact text for each response, including visible formatting. The input-only experiment uses the prompt text; the output-only experiment uses the response; and the combined experiment joins both with a separator. The tokenizer splits words, numbers and punctuation into separate tokens. Its vocabulary is fitted on the training set only, so words from held-out responses are not added during training.")
+    section(st,s,"3. Models and training procedure")
+    para(st,s,"<b>CNN:</b> A trainable word embedding feeds three one-dimensional convolution branches, with kernel widths 3, 5 and 7. Max pooling turns each branch into a fixed-length vector, and dropout plus a fully connected layer produce three scores. The different kernel widths are intended to capture short patterns such as repeated phrases, punctuation and formatting conventions.")
+    para(st,s,"<b>LSTM:</b> The same embedding idea feeds a bidirectional long short-term memory network. Forward and backward final hidden states are concatenated, then passed through dropout and a classification layer. Unlike the CNN, the LSTM processes tokens in sequence and can potentially use longer-range ordering.")
+    para(st,s,"Both classifiers are trained from scratch with cross-entropy loss and Adam (learning rate 0.002, weight decay 0.0001). The default batch size is 32, the sequence limit is 256 tokens, embeddings are 64-dimensional, and the CNN channels / LSTM hidden size are 48. Training uses up to 14 epochs, gradient clipping, and early stopping on validation loss (patience 5). The random seed is 42. The best validation checkpoint is evaluated once on the held-out test prompts. CNN filters have widths 3, 5 and 7; both models use dropout 0.3. Prompt + response is capped at the same 256-token limit as response-only, so appending a prompt may leave fewer available tokens for the response.")
+    para(st,s,"Reported metrics are test accuracy and macro-F1. Accuracy is easy to interpret, but macro-F1 gives equal weight to each model family. With three balanced classes, random chance is approximately 33.3%. The small dataset means the results should be treated as an initial experiment, not a reliable real-world authorship detector.")
+    section(st,s,"4. Experiments and results")
+    if data is None:
+        para(st,s,"<b>RESULTS PENDING:</b> Run the provided train.py against the real dataset, then regenerate this PDF without --draft. It will insert the six required experiments, two extra-credit analyses, figures and measured values automatically.")
+    else:
+        rows=[]
+        for model in ("CNN","LSTM"):
+            for mode in ("input","output","combined"):
+                x=data["rq2"][f"{model}_{mode}"]
+                rows.append([model,mode, f"{100*x['accuracy']:.1f}%",f"{x['macro_f1']:.3f}",str(x['epochs_ran'])])
+        table(st,s,["Model","Features","Test accuracy","Macro-F1","Epochs"],rows,[.8*inch,1.15*inch,1.35*inch,1.05*inch,.65*inch])
+        insert_chart(st,s,a.results/"rq2_comparison.png","Figure 1. Same train/validation/test prompt groups are used across all six CNN and LSTM conditions.")
+        c=data["rq2"]["CNN_output"]
+        l=data["rq2"]["LSTM_output"]
+        para(st,s,f"<b>RQ1:</b> On response text alone, the CNN obtained {c['accuracy']*100:.1f}% accuracy (macro-F1 {c['macro_f1']:.3f}), while the LSTM obtained {l['accuracy']*100:.1f}% (macro-F1 {l['macro_f1']:.3f}). This is a performance comparison on a specific held-out split; it does not prove that either model has discovered a permanent signature of its source LLM.")
+        for model in ("CNN","LSTM"):
+            q=data["rq2"]
+            n=q[f"{model}_input"]["accuracy"]
+            out=q[f"{model}_output"]["accuracy"]
+            both=q[f"{model}_combined"]["accuracy"]
+            para(st,s,f"<b>RQ2, {model}:</b> Prompt-only accuracy was {100*n:.1f}%; response-only was {100*out:.1f}%; and prompt plus response was {100*both:.1f}%. The combined condition was {abs(100*(both-out)):.1f} percentage points {'higher' if both>=out else 'lower'} than response-only. Because the prompts are shared across families, a prompt-only classifier should not have a stable causal way to identify the source model.")
+        insert_chart(st,s,a.results/"cnn_confusion.png","Figure 2. CNN response-only errors, broken down by true and predicted family.",width=5.3)
+        section(st,s,"5. Additional analyses")
+        if data.get("rq3",{}).get("held_out_category"):
+            para(st,s,"<b>RQ3: generalization to a different kind of question.</b> I held out the writing category completely from training and validation. Models were trained on all remaining categories, then tested on writing prompts they had never seen. This checks whether a classifier has learned patterns that travel beyond the types of questions in its training set.")
+            rows=[]
+            for name in ("CNN","LSTM"):
+                x=data["rq3"][f"{name}_unseen_writing"]
+                rows.append([name,str(data['rq3']['held_out_prompts']),f"{100*x['accuracy']:.1f}%",f"{x['macro_f1']:.3f}"])
+            table(st,s,["Model","Held-out writing prompts","Test accuracy","Macro-F1"],rows,[1*inch,1.9*inch,1.1*inch,1.15*inch])
+            para(st,s,"Since the domain shift changes both question type and answer style, drops in performance would be consistent with learning category-dependent cues. Results may also be sensitive to the small number of writing prompts.")
+        else:
+            para(st,s,"<b>RQ3:</b> The source data did not have enough labeled writing prompts for a reliable leave-writing-out experiment; the script skipped this analysis rather than inventing values.")
+        para(st,s,"<b>RQ4: What makes the output look different?</b> I measured response length, average word length, lexical diversity (unique-word ratio), average sentence length, Markdown symbol count, bullet lines, and newlines. These are descriptive properties rather than proof of what the neural network learned.")
+        means=data["rq4"].get("style_feature_means",{})
+        if means:
+            rows=[]
+            for model in ("ChatGPT","Claude","Gemini"):
+                x=means.get(model,{})
+                rows.append([model,f"{x.get('response_words',0):.1f}",f"{x.get('lexical_diversity',0):.3f}",f"{x.get('markdown_symbols',0):.1f}",f"{x.get('bullet_lines',0):.1f}"])
+            table(st,s,["Family","Words","Lexical diversity","Markdown marks","Bullets"],rows,[1.0*inch,1.0*inch,1.3*inch,1.2*inch,.9*inch])
+            insert_chart(st,s,a.results/"linguistic_patterns.png","Figure 3. Average response structure. Features have different scales and should not be compared as if they share units.")
+        rows=[]
+        for name in ("CNN","LSTM"):
+            original=data["rq2"][f"{name}_output"]["accuracy"]
+            stripped=data["rq4"].get(f"{name}_format_stripped_test",{}).get("accuracy")
+            if stripped is not None:
+                rows.append([name,f"{100*original:.1f}%",f"{100*stripped:.1f}%",f"{100*(stripped-original):+.1f} pp"])
+        if rows:
+            para(st,s,"To make the formatting comparison more concrete, I kept the trained response-only models fixed and stripped Markdown/list characters from the test answers. This is a <i>test-time perturbation</i>, not a new training run, so it isolates how sensitive the existing predictions are to these visible cues.")
+            table(st,s,["Model","Original test","Stripped test","Change"],rows,[1.0*inch,1.4*inch,1.4*inch,1.2*inch])
+        baseline_file=a.results/"style_baseline.json"
+        if baseline_file.exists():
+            baseline=json.loads(baseline_file.read_text())
+            simple=baseline["models"]["word_count_only"]
+            features=baseline["models"]["seven_style_features"]
+            para(st,s,"I also trained a <b>simple logistic regression control</b> on response-style measurements. It uses the exact same prompt-disjoint train/test groups, but it does not read the text itself. This helps put the neural-network results into context: if a few numbers already identify a model, the neural networks may be using some of these simpler signals too.")
+            table(st,s,["Style-only control","Test accuracy","Macro-F1"],[["Response word count",f"{100*simple['accuracy']:.1f}%",f"{simple['macro_f1']:.3f}"],["Seven response-style features",f"{100*features['accuracy']:.1f}%",f"{features['macro_f1']:.3f}"]],[2.45*inch,1.35*inch,1.15*inch])
+            para(st,s,"These controls describe predictive surface features; they do not establish that the CNN or LSTM actually relied on exactly the same properties.")
+    section(st,s,"6. What this experiment shows, and its limits")
+    para(st,s,"The biggest methodological lesson here is that dataset design matters as much as architecture. If each model had answered a different set of questions, even a prompt-only classifier might appear successful for the wrong reason. Keeping prompts shared across labels and splitting whole prompts into separate train, validation and test groups makes the experiment more defensible.")
+    if data is not None:
+        c=data["rq2"]["CNN_output"]["accuracy"]
+        l=data["rq2"]["LSTM_output"]["accuracy"]
+        top="CNN" if c>=l else "LSTM"
+        para(st,s,f"The results show that the models are not equally effective on this small corpus. The {top} performed better on response-only classification in this particular split ({100*max(c,l):.1f}% versus {100*min(c,l):.1f}%). It would be easy to conclude that one architecture is always superior, but these are just 45 held-out responses from a single random partition. A repeated split or a larger independent benchmark would be a better way to check how stable the ranking is.")
+    para(st,s,"A second lesson is that an apparent 'fingerprint' may be driven by controllable features such as length, lists, or Markdown formatting. Checking descriptive text features and perturbing formatting helps investigate that possibility, although neither technique fully explains a deep-learning model's decisions.")
+    para(st,s,"There are several limitations: the benchmark has only 100 prompts, the response provenance depends on the public publisher's labeling, model version settings may be unavailable, and findings may not transfer to other topics, model versions, decoding settings, or edited answers. Classification of an unknown real-world paragraph should not be treated as proof of authorship. Before submitting, the student should explain the observed results in their own words and check whether these limitations match the actual run.")
+    section(st,s,"7. Reproducibility and source")
+    para(st,s,"The accompanying repository files contain preprocessing, CNN/LSTM implementations, prompt-group splitting, training and evaluation, RQ3/RQ4 analysis, figure generation, and this PDF report builder. The seed, model configuration, trained output-only checkpoints, split audit and output JSON are recorded in the results directory. Running the scripts with a verified source workbook should regenerate the numerical tables.")
+    para(st,s,"<b>Dataset citation:</b> Pranavsakunde, <i>LLM Response Evaluation Benchmark</i>, public GitHub repository: https://github.com/Pranavsakunde/LLM-Response-Evaluation-Benchmark. The public README describes 100 shared prompts with responses from ChatGPT, Gemini and Claude. Verify redistribution permissions before uploading any original response texts to GitHub.")
+    para(st,s,"<b>Course specification:</b> CMPSC 448, <i>Who Wrote It? Identifying LLMs from Their Responses</i>, modified September 17, 2026, provided assignment PDF.")
+    doc.build(st,onFirstPage=footer,onLaterPages=footer)
+    print("Generated:",a.out)
+
+if __name__=="__main__":
+    main()

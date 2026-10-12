@@ -1,0 +1,379 @@
+prompt_id,LLM_name,LLM_Input,LLM_output,category
+demo_General Knowledge_0,ChatGPT,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",General Knowledge
+demo_General Knowledge_0,Claude,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",General Knowledge
+demo_General Knowledge_0,Gemini,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",General Knowledge
+demo_General Knowledge_1,ChatGPT,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",General Knowledge
+demo_General Knowledge_1,Claude,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",General Knowledge
+demo_General Knowledge_1,Gemini,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",General Knowledge
+demo_General Knowledge_2,ChatGPT,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",General Knowledge
+demo_General Knowledge_2,Claude,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",General Knowledge
+demo_General Knowledge_2,Gemini,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",General Knowledge
+demo_General Knowledge_3,ChatGPT,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",General Knowledge
+demo_General Knowledge_3,Claude,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",General Knowledge
+demo_General Knowledge_3,Gemini,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",General Knowledge
+demo_General Knowledge_4,ChatGPT,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",General Knowledge
+demo_General Knowledge_4,Claude,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",General Knowledge
+demo_General Knowledge_4,Gemini,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",General Knowledge
+demo_General Knowledge_5,ChatGPT,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",General Knowledge
+demo_General Knowledge_5,Claude,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",General Knowledge
+demo_General Knowledge_5,Gemini,[SYNTHETIC TEST PROMPT] General Knowledge: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",General Knowledge
+demo_Coding_0,ChatGPT,[SYNTHETIC TEST PROMPT] Coding: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Coding
+demo_Coding_0,Claude,[SYNTHETIC TEST PROMPT] Coding: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Coding
+demo_Coding_0,Gemini,[SYNTHETIC TEST PROMPT] Coding: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Coding
+demo_Coding_1,ChatGPT,[SYNTHETIC TEST PROMPT] Coding: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Coding
+demo_Coding_1,Claude,[SYNTHETIC TEST PROMPT] Coding: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Coding
+demo_Coding_1,Gemini,[SYNTHETIC TEST PROMPT] Coding: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Coding
+demo_Coding_2,ChatGPT,[SYNTHETIC TEST PROMPT] Coding: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Coding
+demo_Coding_2,Claude,[SYNTHETIC TEST PROMPT] Coding: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Coding
+demo_Coding_2,Gemini,[SYNTHETIC TEST PROMPT] Coding: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Coding
+demo_Coding_3,ChatGPT,[SYNTHETIC TEST PROMPT] Coding: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Coding
+demo_Coding_3,Claude,[SYNTHETIC TEST PROMPT] Coding: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Coding
+demo_Coding_3,Gemini,[SYNTHETIC TEST PROMPT] Coding: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Coding
+demo_Coding_4,ChatGPT,[SYNTHETIC TEST PROMPT] Coding: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Coding
+demo_Coding_4,Claude,[SYNTHETIC TEST PROMPT] Coding: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Coding
+demo_Coding_4,Gemini,[SYNTHETIC TEST PROMPT] Coding: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Coding
+demo_Coding_5,ChatGPT,[SYNTHETIC TEST PROMPT] Coding: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Coding
+demo_Coding_5,Claude,[SYNTHETIC TEST PROMPT] Coding: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Coding
+demo_Coding_5,Gemini,[SYNTHETIC TEST PROMPT] Coding: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Coding
+demo_Mathematics_0,ChatGPT,[SYNTHETIC TEST PROMPT] Mathematics: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Mathematics
+demo_Mathematics_0,Claude,[SYNTHETIC TEST PROMPT] Mathematics: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Mathematics
+demo_Mathematics_0,Gemini,[SYNTHETIC TEST PROMPT] Mathematics: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Mathematics
+demo_Mathematics_1,ChatGPT,[SYNTHETIC TEST PROMPT] Mathematics: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Mathematics
+demo_Mathematics_1,Claude,[SYNTHETIC TEST PROMPT] Mathematics: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Mathematics
+demo_Mathematics_1,Gemini,[SYNTHETIC TEST PROMPT] Mathematics: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Mathematics
+demo_Mathematics_2,ChatGPT,[SYNTHETIC TEST PROMPT] Mathematics: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Mathematics
+demo_Mathematics_2,Claude,[SYNTHETIC TEST PROMPT] Mathematics: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Mathematics
+demo_Mathematics_2,Gemini,[SYNTHETIC TEST PROMPT] Mathematics: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Mathematics
+demo_Mathematics_3,ChatGPT,[SYNTHETIC TEST PROMPT] Mathematics: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Mathematics
+demo_Mathematics_3,Claude,[SYNTHETIC TEST PROMPT] Mathematics: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Mathematics
+demo_Mathematics_3,Gemini,[SYNTHETIC TEST PROMPT] Mathematics: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Mathematics
+demo_Mathematics_4,ChatGPT,[SYNTHETIC TEST PROMPT] Mathematics: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Mathematics
+demo_Mathematics_4,Claude,[SYNTHETIC TEST PROMPT] Mathematics: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Mathematics
+demo_Mathematics_4,Gemini,[SYNTHETIC TEST PROMPT] Mathematics: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Mathematics
+demo_Mathematics_5,ChatGPT,[SYNTHETIC TEST PROMPT] Mathematics: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Mathematics
+demo_Mathematics_5,Claude,[SYNTHETIC TEST PROMPT] Mathematics: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Mathematics
+demo_Mathematics_5,Gemini,[SYNTHETIC TEST PROMPT] Mathematics: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Mathematics
+demo_Writing_0,ChatGPT,[SYNTHETIC TEST PROMPT] Writing: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Writing
+demo_Writing_0,Claude,[SYNTHETIC TEST PROMPT] Writing: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Writing
+demo_Writing_0,Gemini,[SYNTHETIC TEST PROMPT] Writing: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Writing
+demo_Writing_1,ChatGPT,[SYNTHETIC TEST PROMPT] Writing: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Writing
+demo_Writing_1,Claude,[SYNTHETIC TEST PROMPT] Writing: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Writing
+demo_Writing_1,Gemini,[SYNTHETIC TEST PROMPT] Writing: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Writing
+demo_Writing_2,ChatGPT,[SYNTHETIC TEST PROMPT] Writing: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Writing
+demo_Writing_2,Claude,[SYNTHETIC TEST PROMPT] Writing: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Writing
+demo_Writing_2,Gemini,[SYNTHETIC TEST PROMPT] Writing: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Writing
+demo_Writing_3,ChatGPT,[SYNTHETIC TEST PROMPT] Writing: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Writing
+demo_Writing_3,Claude,[SYNTHETIC TEST PROMPT] Writing: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Writing
+demo_Writing_3,Gemini,[SYNTHETIC TEST PROMPT] Writing: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Writing
+demo_Writing_4,ChatGPT,[SYNTHETIC TEST PROMPT] Writing: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Writing
+demo_Writing_4,Claude,[SYNTHETIC TEST PROMPT] Writing: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Writing
+demo_Writing_4,Gemini,[SYNTHETIC TEST PROMPT] Writing: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Writing
+demo_Writing_5,ChatGPT,[SYNTHETIC TEST PROMPT] Writing: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Writing
+demo_Writing_5,Claude,[SYNTHETIC TEST PROMPT] Writing: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Writing
+demo_Writing_5,Gemini,[SYNTHETIC TEST PROMPT] Writing: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Writing
+demo_Reasoning_0,ChatGPT,[SYNTHETIC TEST PROMPT] Reasoning: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Reasoning
+demo_Reasoning_0,Claude,[SYNTHETIC TEST PROMPT] Reasoning: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Reasoning
+demo_Reasoning_0,Gemini,[SYNTHETIC TEST PROMPT] Reasoning: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Reasoning
+demo_Reasoning_1,ChatGPT,[SYNTHETIC TEST PROMPT] Reasoning: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Reasoning
+demo_Reasoning_1,Claude,[SYNTHETIC TEST PROMPT] Reasoning: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Reasoning
+demo_Reasoning_1,Gemini,[SYNTHETIC TEST PROMPT] Reasoning: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Reasoning
+demo_Reasoning_2,ChatGPT,[SYNTHETIC TEST PROMPT] Reasoning: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Reasoning
+demo_Reasoning_2,Claude,[SYNTHETIC TEST PROMPT] Reasoning: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Reasoning
+demo_Reasoning_2,Gemini,[SYNTHETIC TEST PROMPT] Reasoning: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Reasoning
+demo_Reasoning_3,ChatGPT,[SYNTHETIC TEST PROMPT] Reasoning: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Reasoning
+demo_Reasoning_3,Claude,[SYNTHETIC TEST PROMPT] Reasoning: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Reasoning
+demo_Reasoning_3,Gemini,[SYNTHETIC TEST PROMPT] Reasoning: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Reasoning
+demo_Reasoning_4,ChatGPT,[SYNTHETIC TEST PROMPT] Reasoning: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Reasoning
+demo_Reasoning_4,Claude,[SYNTHETIC TEST PROMPT] Reasoning: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Reasoning
+demo_Reasoning_4,Gemini,[SYNTHETIC TEST PROMPT] Reasoning: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Reasoning
+demo_Reasoning_5,ChatGPT,[SYNTHETIC TEST PROMPT] Reasoning: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Reasoning
+demo_Reasoning_5,Claude,[SYNTHETIC TEST PROMPT] Reasoning: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Reasoning
+demo_Reasoning_5,Gemini,[SYNTHETIC TEST PROMPT] Reasoning: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Reasoning
+demo_Translation_0,ChatGPT,[SYNTHETIC TEST PROMPT] Translation: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Translation
+demo_Translation_0,Claude,[SYNTHETIC TEST PROMPT] Translation: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Translation
+demo_Translation_0,Gemini,[SYNTHETIC TEST PROMPT] Translation: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Translation
+demo_Translation_1,ChatGPT,[SYNTHETIC TEST PROMPT] Translation: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Translation
+demo_Translation_1,Claude,[SYNTHETIC TEST PROMPT] Translation: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Translation
+demo_Translation_1,Gemini,[SYNTHETIC TEST PROMPT] Translation: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Translation
+demo_Translation_2,ChatGPT,[SYNTHETIC TEST PROMPT] Translation: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Translation
+demo_Translation_2,Claude,[SYNTHETIC TEST PROMPT] Translation: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Translation
+demo_Translation_2,Gemini,[SYNTHETIC TEST PROMPT] Translation: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Translation
+demo_Translation_3,ChatGPT,[SYNTHETIC TEST PROMPT] Translation: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Translation
+demo_Translation_3,Claude,[SYNTHETIC TEST PROMPT] Translation: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Translation
+demo_Translation_3,Gemini,[SYNTHETIC TEST PROMPT] Translation: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Translation
+demo_Translation_4,ChatGPT,[SYNTHETIC TEST PROMPT] Translation: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Translation
+demo_Translation_4,Claude,[SYNTHETIC TEST PROMPT] Translation: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Translation
+demo_Translation_4,Gemini,[SYNTHETIC TEST PROMPT] Translation: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Translation
+demo_Translation_5,ChatGPT,[SYNTHETIC TEST PROMPT] Translation: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Translation
+demo_Translation_5,Claude,[SYNTHETIC TEST PROMPT] Translation: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Translation
+demo_Translation_5,Gemini,[SYNTHETIC TEST PROMPT] Translation: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Translation
+demo_Safety_0,ChatGPT,[SYNTHETIC TEST PROMPT] Safety: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Safety
+demo_Safety_0,Claude,[SYNTHETIC TEST PROMPT] Safety: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Safety
+demo_Safety_0,Gemini,[SYNTHETIC TEST PROMPT] Safety: example question number 1.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Safety
+demo_Safety_1,ChatGPT,[SYNTHETIC TEST PROMPT] Safety: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Safety
+demo_Safety_1,Claude,[SYNTHETIC TEST PROMPT] Safety: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Safety
+demo_Safety_1,Gemini,[SYNTHETIC TEST PROMPT] Safety: example question number 2.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Safety
+demo_Safety_2,ChatGPT,[SYNTHETIC TEST PROMPT] Safety: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Safety
+demo_Safety_2,Claude,[SYNTHETIC TEST PROMPT] Safety: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Safety
+demo_Safety_2,Gemini,[SYNTHETIC TEST PROMPT] Safety: example question number 3.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Safety
+demo_Safety_3,ChatGPT,[SYNTHETIC TEST PROMPT] Safety: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Safety
+demo_Safety_3,Claude,[SYNTHETIC TEST PROMPT] Safety: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Safety
+demo_Safety_3,Gemini,[SYNTHETIC TEST PROMPT] Safety: example question number 4.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Safety
+demo_Safety_4,ChatGPT,[SYNTHETIC TEST PROMPT] Safety: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Safety
+demo_Safety_4,Claude,[SYNTHETIC TEST PROMPT] Safety: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Safety
+demo_Safety_4,Gemini,[SYNTHETIC TEST PROMPT] Safety: example question number 5.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Safety
+demo_Safety_5,ChatGPT,[SYNTHETIC TEST PROMPT] Safety: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] Sure. Here are three things to keep in mind: first, second, and third.   Sure. Here are three things to keep in mind: first, second, and third.",Safety
+demo_Safety_5,Claude,[SYNTHETIC TEST PROMPT] Safety: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] One way to approach this is to consider the important context and tradeoffs.   One way to approach this is to consider the important context and tradeoffs.",Safety
+demo_Safety_5,Gemini,[SYNTHETIC TEST PROMPT] Safety: example question number 6.,"[SYNTHETIC TEST DATA ONLY, NOT AN ACTUAL LLM RESPONSE] ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.   ## Overview
+* Main point one
+* Main point two
+In summary, examples matter.",Safety
