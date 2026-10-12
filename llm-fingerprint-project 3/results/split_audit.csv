@@ -1,0 +1,301 @@
+prompt_hash,category,LLM_name,split
+8007bd8b2e5f7dd2,general knowledge,ChatGPT,train
+8007bd8b2e5f7dd2,general knowledge,Claude,train
+8007bd8b2e5f7dd2,general knowledge,Gemini,train
+4b444c2317797b6c,general knowledge,ChatGPT,train
+4b444c2317797b6c,general knowledge,Claude,train
+4b444c2317797b6c,general knowledge,Gemini,train
+1902ec9a7ddd65a8,general knowledge,ChatGPT,train
+1902ec9a7ddd65a8,general knowledge,Claude,train
+1902ec9a7ddd65a8,general knowledge,Gemini,train
+b0c3b9e46a0e3024,general knowledge,ChatGPT,train
+b0c3b9e46a0e3024,general knowledge,Claude,train
+b0c3b9e46a0e3024,general knowledge,Gemini,train
+b282f176b826e70c,general knowledge,ChatGPT,test
+b282f176b826e70c,general knowledge,Claude,test
+b282f176b826e70c,general knowledge,Gemini,test
+e927c62f578d2e1d,general knowledge,ChatGPT,test
+e927c62f578d2e1d,general knowledge,Claude,test
+e927c62f578d2e1d,general knowledge,Gemini,test
+9cdeb29d70830888,general knowledge,ChatGPT,train
+9cdeb29d70830888,general knowledge,Claude,train
+9cdeb29d70830888,general knowledge,Gemini,train
+cd01cbb93f488d68,general knowledge,ChatGPT,val
+cd01cbb93f488d68,general knowledge,Claude,val
+cd01cbb93f488d68,general knowledge,Gemini,val
+b345394f2faedd6b,general knowledge,ChatGPT,train
+b345394f2faedd6b,general knowledge,Claude,train
+b345394f2faedd6b,general knowledge,Gemini,train
+ab1fec0a0d3b9386,general knowledge,ChatGPT,train
+ab1fec0a0d3b9386,general knowledge,Claude,train
+ab1fec0a0d3b9386,general knowledge,Gemini,train
+4c5ae4a3305e91fc,general knowledge,ChatGPT,train
+4c5ae4a3305e91fc,general knowledge,Claude,train
+4c5ae4a3305e91fc,general knowledge,Gemini,train
+f115017b029ca916,general knowledge,ChatGPT,test
+f115017b029ca916,general knowledge,Claude,test
+f115017b029ca916,general knowledge,Gemini,test
+58867ddd3669da03,general knowledge,ChatGPT,train
+58867ddd3669da03,general knowledge,Claude,train
+58867ddd3669da03,general knowledge,Gemini,train
+8a9b23e1699fe737,general knowledge,ChatGPT,train
+8a9b23e1699fe737,general knowledge,Claude,train
+8a9b23e1699fe737,general knowledge,Gemini,train
+3099590699f1ddb0,general knowledge,ChatGPT,train
+3099590699f1ddb0,general knowledge,Claude,train
+3099590699f1ddb0,general knowledge,Gemini,train
+51a38b933a0bd14a,general knowledge,ChatGPT,train
+51a38b933a0bd14a,general knowledge,Claude,train
+51a38b933a0bd14a,general knowledge,Gemini,train
+d0bf3c6fc39dd1bc,general knowledge,ChatGPT,train
+d0bf3c6fc39dd1bc,general knowledge,Claude,train
+d0bf3c6fc39dd1bc,general knowledge,Gemini,train
+c5ee5914ee6a5171,general knowledge,ChatGPT,train
+c5ee5914ee6a5171,general knowledge,Claude,train
+c5ee5914ee6a5171,general knowledge,Gemini,train
+579470e64f09833c,general knowledge,ChatGPT,train
+579470e64f09833c,general knowledge,Claude,train
+579470e64f09833c,general knowledge,Gemini,train
+5e6ebc3d8cf3a79b,general knowledge,ChatGPT,train
+5e6ebc3d8cf3a79b,general knowledge,Claude,train
+5e6ebc3d8cf3a79b,general knowledge,Gemini,train
+66efe45e246983bc,coding,ChatGPT,train
+66efe45e246983bc,coding,Claude,train
+66efe45e246983bc,coding,Gemini,train
+7f4e0f00ff084200,coding,ChatGPT,val
+7f4e0f00ff084200,coding,Claude,val
+7f4e0f00ff084200,coding,Gemini,val
+61c166da86144b49,coding,ChatGPT,train
+61c166da86144b49,coding,Claude,train
+61c166da86144b49,coding,Gemini,train
+6d876095f3fabaac,coding,ChatGPT,val
+6d876095f3fabaac,coding,Claude,val
+6d876095f3fabaac,coding,Gemini,val
+f50530632dce1142,coding,ChatGPT,train
+f50530632dce1142,coding,Claude,train
+f50530632dce1142,coding,Gemini,train
+81da15b8da425598,coding,ChatGPT,train
+81da15b8da425598,coding,Claude,train
+81da15b8da425598,coding,Gemini,train
+3d8ffa493a094090,coding,ChatGPT,train
+3d8ffa493a094090,coding,Claude,train
+3d8ffa493a094090,coding,Gemini,train
+8a7b5606896da917,coding,ChatGPT,test
+8a7b5606896da917,coding,Claude,test
+8a7b5606896da917,coding,Gemini,test
+9c078343bd1e02b9,coding,ChatGPT,val
+9c078343bd1e02b9,coding,Claude,val
+9c078343bd1e02b9,coding,Gemini,val
+900ab2ea8a272cf2,coding,ChatGPT,train
+900ab2ea8a272cf2,coding,Claude,train
+900ab2ea8a272cf2,coding,Gemini,train
+abb57c288fb6fc30,coding,ChatGPT,train
+abb57c288fb6fc30,coding,Claude,train
+abb57c288fb6fc30,coding,Gemini,train
+3db729bac3ac6339,coding,ChatGPT,train
+3db729bac3ac6339,coding,Claude,train
+3db729bac3ac6339,coding,Gemini,train
+743930d6107083d5,coding,ChatGPT,test
+743930d6107083d5,coding,Claude,test
+743930d6107083d5,coding,Gemini,test
+3a9579a905673a79,coding,ChatGPT,val
+3a9579a905673a79,coding,Claude,val
+3a9579a905673a79,coding,Gemini,val
+a72a9bce4a38c86c,coding,ChatGPT,test
+a72a9bce4a38c86c,coding,Claude,test
+a72a9bce4a38c86c,coding,Gemini,test
+f838e2aeb0f871c6,mathematics,ChatGPT,train
+f838e2aeb0f871c6,mathematics,Claude,train
+f838e2aeb0f871c6,mathematics,Gemini,train
+a6bc46e96153c404,mathematics,ChatGPT,train
+a6bc46e96153c404,mathematics,Claude,train
+a6bc46e96153c404,mathematics,Gemini,train
+94e4ba8be221ce13,mathematics,ChatGPT,val
+94e4ba8be221ce13,mathematics,Claude,val
+94e4ba8be221ce13,mathematics,Gemini,val
+92cb4eab10c65ff7,mathematics,ChatGPT,train
+92cb4eab10c65ff7,mathematics,Claude,train
+92cb4eab10c65ff7,mathematics,Gemini,train
+1b91cd83fed64889,mathematics,ChatGPT,train
+1b91cd83fed64889,mathematics,Claude,train
+1b91cd83fed64889,mathematics,Gemini,train
+bd04e8b9b970dda6,mathematics,ChatGPT,train
+bd04e8b9b970dda6,mathematics,Claude,train
+bd04e8b9b970dda6,mathematics,Gemini,train
+05919ed18f75600a,mathematics,ChatGPT,train
+05919ed18f75600a,mathematics,Claude,train
+05919ed18f75600a,mathematics,Gemini,train
+00fb21bc8ce009fa,mathematics,ChatGPT,train
+00fb21bc8ce009fa,mathematics,Claude,train
+00fb21bc8ce009fa,mathematics,Gemini,train
+6df197380a0bcb55,mathematics,ChatGPT,train
+6df197380a0bcb55,mathematics,Claude,train
+6df197380a0bcb55,mathematics,Gemini,train
+fb2e34a39f2a9f7a,mathematics,ChatGPT,train
+fb2e34a39f2a9f7a,mathematics,Claude,train
+fb2e34a39f2a9f7a,mathematics,Gemini,train
+95b972b79afac429,mathematics,ChatGPT,train
+95b972b79afac429,mathematics,Claude,train
+95b972b79afac429,mathematics,Gemini,train
+bc6c6183dbe79df6,mathematics,ChatGPT,test
+bc6c6183dbe79df6,mathematics,Claude,test
+bc6c6183dbe79df6,mathematics,Gemini,test
+15d34cc4dd44bb8c,mathematics,ChatGPT,train
+15d34cc4dd44bb8c,mathematics,Claude,train
+15d34cc4dd44bb8c,mathematics,Gemini,train
+c0cceb857d200c9f,mathematics,ChatGPT,val
+c0cceb857d200c9f,mathematics,Claude,val
+c0cceb857d200c9f,mathematics,Gemini,val
+6032463613ff675c,mathematics,ChatGPT,train
+6032463613ff675c,mathematics,Claude,train
+6032463613ff675c,mathematics,Gemini,train
+ce536ea56f212483,writing,ChatGPT,train
+ce536ea56f212483,writing,Claude,train
+ce536ea56f212483,writing,Gemini,train
+4f0d39c035d2af1b,writing,ChatGPT,train
+4f0d39c035d2af1b,writing,Claude,train
+4f0d39c035d2af1b,writing,Gemini,train
+fe177f2e270a901d,writing,ChatGPT,val
+fe177f2e270a901d,writing,Claude,val
+fe177f2e270a901d,writing,Gemini,val
+c80b09c72f9ed1ed,writing,ChatGPT,train
+c80b09c72f9ed1ed,writing,Claude,train
+c80b09c72f9ed1ed,writing,Gemini,train
+671f21111c8a62a9,writing,ChatGPT,train
+671f21111c8a62a9,writing,Claude,train
+671f21111c8a62a9,writing,Gemini,train
+d48f2ecf0d300c48,writing,ChatGPT,test
+d48f2ecf0d300c48,writing,Claude,test
+d48f2ecf0d300c48,writing,Gemini,test
+6bbc4e7c84b872e3,writing,ChatGPT,train
+6bbc4e7c84b872e3,writing,Claude,train
+6bbc4e7c84b872e3,writing,Gemini,train
+da6ef7d9ffce9ab1,writing,ChatGPT,train
+da6ef7d9ffce9ab1,writing,Claude,train
+da6ef7d9ffce9ab1,writing,Gemini,train
+b6039d10f21a5ffc,writing,ChatGPT,train
+b6039d10f21a5ffc,writing,Claude,train
+b6039d10f21a5ffc,writing,Gemini,train
+a2d332ef20f718fd,writing,ChatGPT,train
+a2d332ef20f718fd,writing,Claude,train
+a2d332ef20f718fd,writing,Gemini,train
+1f1f37f4bc31e8e8,writing,ChatGPT,train
+1f1f37f4bc31e8e8,writing,Claude,train
+1f1f37f4bc31e8e8,writing,Gemini,train
+cccb88389faf6553,writing,ChatGPT,train
+cccb88389faf6553,writing,Claude,train
+cccb88389faf6553,writing,Gemini,train
+a28ca4c0e4b38a19,writing,ChatGPT,train
+a28ca4c0e4b38a19,writing,Claude,train
+a28ca4c0e4b38a19,writing,Gemini,train
+e3b67afa920031aa,writing,ChatGPT,train
+e3b67afa920031aa,writing,Claude,train
+e3b67afa920031aa,writing,Gemini,train
+68a51468e66eb877,writing,ChatGPT,train
+68a51468e66eb877,writing,Claude,train
+68a51468e66eb877,writing,Gemini,train
+d406c1cd4b25f21e,reasoning,ChatGPT,test
+d406c1cd4b25f21e,reasoning,Claude,test
+d406c1cd4b25f21e,reasoning,Gemini,test
+7313b16f16767872,reasoning,ChatGPT,test
+7313b16f16767872,reasoning,Claude,test
+7313b16f16767872,reasoning,Gemini,test
+40ce0e812d43872b,reasoning,ChatGPT,train
+40ce0e812d43872b,reasoning,Claude,train
+40ce0e812d43872b,reasoning,Gemini,train
+f0212ad28c007bc3,reasoning,ChatGPT,test
+f0212ad28c007bc3,reasoning,Claude,test
+f0212ad28c007bc3,reasoning,Gemini,test
+d32e67ce851fd0fd,reasoning,ChatGPT,val
+d32e67ce851fd0fd,reasoning,Claude,val
+d32e67ce851fd0fd,reasoning,Gemini,val
+20859b829a435df0,reasoning,ChatGPT,val
+20859b829a435df0,reasoning,Claude,val
+20859b829a435df0,reasoning,Gemini,val
+5ce9f61119321794,reasoning,ChatGPT,train
+5ce9f61119321794,reasoning,Claude,train
+5ce9f61119321794,reasoning,Gemini,train
+15b87b28ac946a86,reasoning,ChatGPT,train
+15b87b28ac946a86,reasoning,Claude,train
+15b87b28ac946a86,reasoning,Gemini,train
+436fbc08188257a3,reasoning,ChatGPT,val
+436fbc08188257a3,reasoning,Claude,val
+436fbc08188257a3,reasoning,Gemini,val
+8fa82364c928110a,reasoning,ChatGPT,train
+8fa82364c928110a,reasoning,Claude,train
+8fa82364c928110a,reasoning,Gemini,train
+decc9b011bddfd8d,reasoning,ChatGPT,train
+decc9b011bddfd8d,reasoning,Claude,train
+decc9b011bddfd8d,reasoning,Gemini,train
+edc6d24bd0b09029,reasoning,ChatGPT,train
+edc6d24bd0b09029,reasoning,Claude,train
+edc6d24bd0b09029,reasoning,Gemini,train
+3ca27620d3b9e100,reasoning,ChatGPT,test
+3ca27620d3b9e100,reasoning,Claude,test
+3ca27620d3b9e100,reasoning,Gemini,test
+b7c8491daf43890a,reasoning,ChatGPT,val
+b7c8491daf43890a,reasoning,Claude,val
+b7c8491daf43890a,reasoning,Gemini,val
+ce32added43ebc00,reasoning,ChatGPT,train
+ce32added43ebc00,reasoning,Claude,train
+ce32added43ebc00,reasoning,Gemini,train
+62c17cb76cdb36c8,translation,ChatGPT,test
+62c17cb76cdb36c8,translation,Claude,test
+62c17cb76cdb36c8,translation,Gemini,test
+f8b1eb911bc609b0,translation,ChatGPT,train
+f8b1eb911bc609b0,translation,Claude,train
+f8b1eb911bc609b0,translation,Gemini,train
+da5504e0e2ab3d56,translation,ChatGPT,test
+da5504e0e2ab3d56,translation,Claude,test
+da5504e0e2ab3d56,translation,Gemini,test
+a3995ab19bc77a79,translation,ChatGPT,train
+a3995ab19bc77a79,translation,Claude,train
+a3995ab19bc77a79,translation,Gemini,train
+a825799767768f32,translation,ChatGPT,train
+a825799767768f32,translation,Claude,train
+a825799767768f32,translation,Gemini,train
+0f02524122075b38,translation,ChatGPT,train
+0f02524122075b38,translation,Claude,train
+0f02524122075b38,translation,Gemini,train
+10cadd243c1f20d4,translation,ChatGPT,val
+10cadd243c1f20d4,translation,Claude,val
+10cadd243c1f20d4,translation,Gemini,val
+52c3aee70c4c3efa,translation,ChatGPT,val
+52c3aee70c4c3efa,translation,Claude,val
+52c3aee70c4c3efa,translation,Gemini,val
+471b70ef1d5818b8,translation,ChatGPT,test
+471b70ef1d5818b8,translation,Claude,test
+471b70ef1d5818b8,translation,Gemini,test
+fe6d44d08b3531cf,translation,ChatGPT,train
+fe6d44d08b3531cf,translation,Claude,train
+fe6d44d08b3531cf,translation,Gemini,train
+63f80834e01363cc,safety,ChatGPT,train
+63f80834e01363cc,safety,Claude,train
+63f80834e01363cc,safety,Gemini,train
+9e301670dc0fd250,safety,ChatGPT,train
+9e301670dc0fd250,safety,Claude,train
+9e301670dc0fd250,safety,Gemini,train
+e8186fb30855d394,safety,ChatGPT,train
+e8186fb30855d394,safety,Claude,train
+e8186fb30855d394,safety,Gemini,train
+6e2758ec5f11c2f9,safety,ChatGPT,train
+6e2758ec5f11c2f9,safety,Claude,train
+6e2758ec5f11c2f9,safety,Gemini,train
+984b7473ad283970,safety,ChatGPT,val
+984b7473ad283970,safety,Claude,val
+984b7473ad283970,safety,Gemini,val
+7da308909f912de1,safety,ChatGPT,val
+7da308909f912de1,safety,Claude,val
+7da308909f912de1,safety,Gemini,val
+e43527ecf37cdf2f,safety,ChatGPT,train
+e43527ecf37cdf2f,safety,Claude,train
+e43527ecf37cdf2f,safety,Gemini,train
+8561a9639064e729,safety,ChatGPT,train
+8561a9639064e729,safety,Claude,train
+8561a9639064e729,safety,Gemini,train
+218414e3e10257ad,safety,ChatGPT,train
+218414e3e10257ad,safety,Claude,train
+218414e3e10257ad,safety,Gemini,train
+b560106412f6536f,safety,ChatGPT,train
+b560106412f6536f,safety,Claude,train
+b560106412f6536f,safety,Gemini,train
