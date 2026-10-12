@@ -1,1 +1,0 @@
-"""LLM authorship attribution project."""
