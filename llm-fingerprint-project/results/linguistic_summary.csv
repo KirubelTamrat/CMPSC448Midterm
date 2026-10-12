@@ -1,4 +1,0 @@
-LLM_name,response_words,avg_word_length,lexical_diversity,average_sentence_words,markdown_symbols,bullet_lines,newlines
-ChatGPT,104.35,4.95,0.628,15.221,0.86,0.23,19.19
-Claude,80.74,4.829,0.73,18.618,0.49,0.04,2.86
-Gemini,38.45,4.899,0.813,13.906,0.08,0.0,2.21
